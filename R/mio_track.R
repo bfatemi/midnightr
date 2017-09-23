@@ -8,6 +8,7 @@
 #' @export
 mio_track <- function(...){
   param <- data.table::as.data.table(pryr::named_dots(...))
+
   return("SUCCESS IS RELATIVE")
 
   con <- mongo(collection = "location_pings",
